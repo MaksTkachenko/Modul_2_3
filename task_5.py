@@ -10,7 +10,11 @@ def task_5():
     class Library:
 
         def __init__(self):
-            self.books = []
+            self.books = [
+                Book("book_1", "autor_1", 2011),
+                Book("book_2", "autor_2", 2014),
+                Book("book_3", "autor_3", 2018)
+            ]
 
         def add_book(self, book):
             return self.books.append(book)
@@ -29,13 +33,14 @@ def task_5():
         def __repr__(self):
             return f"{self.title_book} by {self.author_book} ({self.years_book})"
 
-    book_1 = Book("book_1", "autor_1", 2006)
-    book_2 = Book("book_2", "autor_2", 2012)
-    book_3 = Book("book_3", "autor_3", 2017)
+    book_5 = Book("book_5", "autor_5", 2006)
+    book_8 = Book("book_8", "autor_8", 2012)
+    book_7 = Book("book_7", "autor_7", 2017)
 
+    print(Library)
     library = Library()
-    library.add_book(book_1)
-    library.add_book(book_2)
-    library.add_book(book_3)
+    library.add_book(book_5)
+    library.add_book(book_7)
+    library.add_book(book_8)
 
     print(library)
