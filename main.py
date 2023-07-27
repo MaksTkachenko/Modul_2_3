@@ -4,6 +4,7 @@ import task_3
 import task_4
 import task_5
 import task_6
+import task_7
 
 if __name__ == '__main__':
     value = int(input("Choose a task: "))
@@ -20,5 +21,7 @@ if __name__ == '__main__':
             task_5.task_5()
         case 6:
             task_6.task_6()
+        case 7:
+            task_7.task_7()
         case _:
             print("Incorrect number")
