@@ -3,6 +3,7 @@
 
 import math
 
+
 def task_6():
 
     class Circle:
