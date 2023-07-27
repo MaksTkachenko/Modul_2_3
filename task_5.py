@@ -16,7 +16,8 @@ def task_5():
             return self.books.append(book)
 
         def __str__(self):
-            return f"{self.books}"
+            book_list = "\n".join(str(book) for book in self.books)
+            return f"Books in the Library:\n{book_list}"
 
     class Book:
 
@@ -28,10 +29,9 @@ def task_5():
         def __repr__(self):
             return f"{self.title_book} by {self.author_book} ({self.years_book})"
 
-    book_1 = ("book_1", "autor_1", 2006)
-    book_2 = ("book_2", "autor_2", 2012)
-    book_3 = ("book_3", "autor_3", 2017)
-    book_4 = ("book_4", "autor_4", 2023)
+    book_1 = Book("book_1", "autor_1", 2006)
+    book_2 = Book("book_2", "autor_2", 2012)
+    book_3 = Book("book_3", "autor_3", 2017)
 
     library = Library()
     library.add_book(book_1)
