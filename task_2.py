@@ -56,5 +56,3 @@ def task_2():
     print(BankAccount.__str__(person_1))
     print(BankAccount.__str__(person_2))
     print(BankAccount.__str__(person_3))
-
-
