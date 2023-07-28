@@ -6,21 +6,20 @@ def task_7():
 
     class Student:
 
+        count = 0
+
         def __init__(self, students, course):
             self.students = students
             self.course = course
+            Student.count += 1
 
         @classmethod
         def print_count(cls):
-            count = 0
-            for i in list_student:
-                count += 1
-            return f"Total number of students {count}"
+            return f"Total number of students {Student.count}"
 
     student_1 = Student("Student_1", 3)
     student_2 = Student("Student_2", 4)
     student_3 = Student("Student_3", 1)
-
-    list_student = (student_1, student_2, student_3)
+    student_4 = Student("Student_4", 2)
 
     print(Student.print_count())
